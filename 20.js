@@ -1,0 +1,18 @@
+name='srat'
+key='hit'
+movie={
+    name,
+    [key]:4,
+    cast:[
+        'hj',
+        'cvb'
+    ],
+    boxOfficeCollection:20,
+    addToCast:function(str){
+        this.cast.push(str)
+    },
+    addToBoxOffice:function(newam){
+        this.boxOfficeCollection=this.boxOfficeCollection+newam
+    }
+}
+console.log(movie[key])
