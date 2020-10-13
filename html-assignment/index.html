@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Form filling for rupeek">
+    <title>Form</title>
+    <style>
+        .main_div{
+            margin: auto;
+            width: 30%;
+        }
+        ::placeholder{
+            color: #f26422;
+        }
+        .main_div div *{
+            width:100%;
+            height:45px;
+            border-radius: 3px;
+            border:1px solid #f26422;
+            margin-bottom: 5px;
+            padding-left: 5px;
+        }
+        .sub_div5 input{
+            background-color: #f26422; 
+            text-align: center;
+        }
+        .sub_div4 textarea{
+            height:95px;
+        }
+    </style>
+</head>
+<body>
+    <form action="ack.html" method="post">
+        <div class="main_div">
+            <h1>Write to us</h1>
+            <div class="sub_div1">
+            <input type="text" name="name" placeholder="Name">
+            </div>
+            <div class="sub_div2">
+            <input type="number" name="phone_no" placeholder="Phone Number">
+            </div>
+            <div class="sub_div3">
+            <input type="email" name="mail_id" placeholder="Email">
+            </div>
+            <div class="sub_div4">
+            <textarea placeholder="Write to us"></textarea>
+            </div>
+            <div class="sub_div5">
+            <input type="submit" value="send">
+            </div>
+        </div>
+    </form>
+</body>
+</html>
