@@ -1,0 +1,12 @@
+arr=[1,2,3,4,7]
+console.log(arr.length)
+arr[0]++
+l=arr.length
+arr[l-1]=arr[l-2]+arr[l-1]
+arr.push(9)
+console.log(arr)
+newarr=[]
+for(i=0;i<arr.length;i++){
+    newarr[i]=arr[i]
+}
+console.log(newarr)
