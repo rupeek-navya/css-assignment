@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui earum fugit laudantium voluptatem similique, accusamus iure! Fugit laboriosam natus, sapiente, culpa fugiat totam perspiciatis, nam neque optio atque voluptatum dolorum.</p>
+    <form>
+        <input type="text" name="name" minlength="8" id="box">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+<script>
+    const tag=document.querySelector("#box")
+    const form=document.querySelector('form')
+    const p=document.querySelector('p')
+    document.querySelector('p').addEventListener('click',(e)=>{
+        alert(p.innerHTML)
+    })
+    tag.addEventListener('change',function(e){
+        if(e.target.value.length>=8)
+        tag.style.backgroundColor="green"
+    })
+    form.addEventListener('submit',function(e){
+        e.preventDefault()
+
+    })
+
+</script>
+</html>
