@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, tempore facere praesentium eum iusto deleniti minus perspiciatis repellendus ducimus pariatur ad id odit nostrum iure laboriosam esse tempora! In, vero!
+    </p>
+    <p id="p2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti repudiandae quos nulla beatae quod veritatis, minus cupiditate in, at praesentium quibusdam saepe, excepturi aliquid velit ipsam eligendi fugit distinctio facilis!
+    </p>
+    <p id="p3">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, ut ipsum omnis porro numquam, iusto quo perspiciatis at et, laudantium earum autem iste! Id dolore iure, autem totam quis voluptas!
+    </p>
+</body>
+<script>
+    let p=document.createElement('p')
+    p.innerHTML = "<strong>Hi there!</strong> You've read an important message."
+    document.body.prepend(p)
+    document.body.append(p)
+    let p2tag=document.querySelector('#p2')
+    console.log(p2tag)
+    p2tag.innerHTML="<span>hey</span><span>hello</span>"
+    console.log(p2tag)
+    p2tag.setAttribute('name','some value')
+    console.log(p2tag)
+</script>
+</html>
