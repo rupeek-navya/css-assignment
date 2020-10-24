@@ -19,7 +19,7 @@ router.get( '/', ( req, res ) => {
 });
 
 router.get( '/:id', ( req, res) => {
-    const workshopId=req.params.id;
+    const workshopId= +req.params.id;
     let workshops, error;
     try {
         workshops = sendWorkshops();
